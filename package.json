@@ -24,7 +24,8 @@
     "url": "https://github.com/JSLite/JSLite/issues"
   },
   "scripts": {
-    "test": "mocha-phantomjs test/index.html",
+    "test": "karma start karma.conf.js",
+    "test-cov": "karma start karma.conf.cov.js",
     "start": "gulp watch"
   },
   "devDependencies": {
@@ -36,13 +37,14 @@
     "gulp-uglify": "~1.5.1",
     "gulp-umd": "~0.2.0",
     "gulp-util": "~3.0.7",
-    "gulp-watch": "~4.3.5"
+    "gulp-watch": "~4.3.5",
+    "cli-color": "~1.1.0",
+    "jasmine-core": ">=2.4.1",
+    "karma": ">=0.13.22",
+    "karma-coverage": ">=0.5.5",
+    "karma-jasmine": ">=0.3.7",
+    "karma-phantomjs-launcher": ">=1.0.0"
   },
   "dependencies": {
-    "chai": "~3.4.1",
-    "cli-color": "~1.1.0",
-    "gulp": "~3.9.1",
-    "mocha": "~2.3.4",
-    "mocha-phantomjs": "~4.0.2"
   }
 }
